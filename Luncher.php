@@ -764,9 +764,7 @@ Clean Block List
 
     	file_put_contents('banlist.txt',$adddd);
 }
-		apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "UnBanned
-------------------
-از لیست سیاه پاک شد." ,"parse_mode" =>"HTML"));
+		apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "UnBanned" ,"parse_mode" =>"HTML"));
 		apiRequest("sendMessage", array('chat_id' => $rpto, "text" => "<b>You Have Been UnBanned,</b>." ,"parse_mode" =>"HTML"));
     		}
     	}
