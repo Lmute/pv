@@ -631,30 +631,30 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => $pmembersiddd[1
       
     		apiRequest("sendMessage", array('chat_id' => $admin, "text" => "
 
-<i>🔹`1.` */ban*
-block user
+🔹`1.` */ban*
+<i>block user</i>
 —------------------------------
 🔹`2. `*/unban *
-unblock user
+<i>unblock user</i>
 —------------------------------
 🔹`3. `*/setstart *
-set start pm
+<i>set start pm</i>
 —------------------------------
 🔹`4. `*/setdone *
-set done pm
+<i>set done pm</i>
 ➖➖➖➖➖➖➖➖➖➖➖
 
 🔸`1.`*Send To All*
-braodcast pm
+<i>braodcast pm</i>
 —------------------------------
 🔸`2.`*Members*
-your members
+<i>your members</i>
 —------------------------------
 🔸`3.`*Blocked Users*
-your block members
+<i>your block members</i>
 —-------------------------------
 🔸`4.`*Settings*
-settings</i>
+<i>settings</i>
 
 .","parse_mode" =>"MARKDOWN",'reply_markup' => array(
         'keyboard' => array(array('Send To All'),array('Help','Members','Blocked Users'),array("Settings")),
