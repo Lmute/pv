@@ -629,9 +629,9 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => $pmembersiddd[1
     		
     }else if ($text == "Help" && $chat_id==$admin) {
       
-    		apiRequest("sendMessage", array('chat_id' => $admin, "text" => "`
+    		apiRequest("sendMessage", array('chat_id' => $admin, "text" => "
 
-🔹`1.` */ban*
+<i>🔹`1.` */ban*
 block user
 —------------------------------
 🔹`2. `*/unban *
@@ -643,7 +643,6 @@ set start pm
 🔹`4. `*/setdone *
 set done pm
 ➖➖➖➖➖➖➖➖➖➖➖
-🔶 لیست دکمه  های موجود :
 
 🔸`1.`*Send To All*
 braodcast pm
@@ -655,7 +654,7 @@ your members
 your block members
 —-------------------------------
 🔸`4.`*Settings*
-settings
+settings</i>
 
 .","parse_mode" =>"MARKDOWN",'reply_markup' => array(
         'keyboard' => array(array('Send To All'),array('Help','Members','Blocked Users'),array("Settings")),
