@@ -632,29 +632,29 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => $pmembersiddd[1
     		apiRequest("sendMessage", array('chat_id' => $admin, "text" => "
 
 🔹`1.` */ban*
-<i>block user</i>
+_block user_
 —------------------------------
 🔹`2. `*/unban *
-<i>unblock user</i>
+_unblock user_
 —------------------------------
 🔹`3. `*/setstart *
-<i>set start pm</i>
+_set start pm_
 —------------------------------
 🔹`4. `*/setdone *
-<i>set done pm</i>
+_set done pm_
 ➖➖➖➖➖➖➖➖➖➖➖
 
 🔸`1.`*Send To All*
-<i>braodcast pm</i>
+_braodcast pm_
 —------------------------------
 🔸`2.`*Members*
-<i>your members</i>
+_your members_
 —------------------------------
 🔸`3.`*Blocked Users*
-<i>your block members</i>
+_your block members_
 —-------------------------------
 🔸`4.`*Settings*
-<i>settings</i>
+_settings_
 
 .","parse_mode" =>"MARKDOWN",'reply_markup' => array(
         'keyboard' => array(array('Send To All'),array('Help','Members','Blocked Users'),array("Settings")),
