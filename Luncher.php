@@ -613,15 +613,12 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => $pmembersiddd[1
     		
     		
     		 apiRequestJson("sendMessage", array('chat_id' => $chat_id,"parse_mode"=>"HTML", "text" => '
-یکی از گزینه ها را انتخاب کنید
+
 —---------------------------------------------
-🔶🔸 Clean Members
-🔶🔸پاک کردن لیست مخاطبین
+<b>Clean Members</b>
 
-🔷🔹Clean Block List
-🔷🔹پاک کردن لیست سیاه
-
-در صورت انصراف Back را بزنید
+<b>Clean Block List</b>
+<i>for cancell select back</i>
 .', 'reply_markup' => array(
         'keyboard' => array(array('Clean Members ','Clean Block List '),array('Back')),
         'one_time_keyboard' => true,
@@ -632,39 +629,33 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => $pmembersiddd[1
     		
     }else if ($text == "Help" && $chat_id==$admin) {
       
-    		apiRequest("sendMessage", array('chat_id' => $admin, "text" => "`برای پاسخ پیام مورد نظر را ریپلای کنید`
-🔷 لیست کامنت های موجود :
+    		apiRequest("sendMessage", array('chat_id' => $admin, "text" => "`
 
 🔹`1.` */ban*
- قرار دادن مخاطب در لیست سیاه(با ریپلای) 
+block user
 —------------------------------
 🔹`2. `*/unban *
- پاک کردن مخاطب از لیست سیاه(با ریپلای)
+unblock user
 —------------------------------
 🔹`3. `*/setstart *
-اگر شخصی وارد ربات شما شود و */start* بزند این پیام  برای او ارسال میشود           */setstart* بزنید و در ادامه ی آن متن مورد نظر خود را بنویسید.
-مثال :
-*/setstart* سلام چطوری؟ اگه پیامی داری واسه من همینجا بفرست😃
+set start pm
 —------------------------------
 🔹`4. `*/setdone *
-اگر شخصی در ربات برای شما پیامی بفرستد این پیام برای او ارسال میشود.
-مثال :
-*/setdone* پیامت رسید صبر کن تا جواب بدم
-
+set done pm
 ➖➖➖➖➖➖➖➖➖➖➖
 🔶 لیست دکمه  های موجود :
 
 🔸`1.`*Send To All*
-ارسال پیام متنی به همه ی کاربران
+braodcast pm
 —------------------------------
 🔸`2.`*Members*
-تعداد کاربران
+your members
 —------------------------------
 🔸`3.`*Blocked Users*
-تعداد کاربران در لیست سیاه
+your block members
 —-------------------------------
 🔸`4.`*Settings*
-تنظیمان ربات
+settings
 
 .","parse_mode" =>"MARKDOWN",'reply_markup' => array(
         'keyboard' => array(array('Send To All'),array('Help','Members','Blocked Users'),array("Settings")),
