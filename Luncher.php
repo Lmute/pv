@@ -540,7 +540,7 @@ $pmembersid= explode("\n",$txxt);
 
 }
 if($chat_id==$admin){
-  apiRequestJson("sendMessage", array('chat_id' => $chat_id, "text" => '<b>Bot Is online</b>',"parse_mode"=>"MARKDOWN", 'reply_markup' => array(
+  apiRequestJson("sendMessage", array('chat_id' => $chat_id, "text" => '*Bot Is online*',"parse_mode"=>"MARKDOWN", 'reply_markup' => array(
         'keyboard' => array(array('broadcast'),array('Help','Members','Blocked'),array("Settings")),
         'one_time_keyboard' => true,
         'selective' => true,
@@ -609,7 +609,7 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => $pmembersiddd[1
 }
     	
     
-    }else if ($text == "Settings ⚙" && $chat_id==$admin) {
+    }else if ($text == "Settings" && $chat_id==$admin) {
     		
     		
     		 apiRequestJson("sendMessage", array('chat_id' => $chat_id,"parse_mode"=>"HTML", "text" => '
@@ -625,7 +625,7 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => $pmembersiddd[1
     		
     		
     		
-    }else if ($text == "⚓️ Help" && $chat_id==$admin) {
+    }else if ($text == "Help" && $chat_id==$admin) {
       
     		apiRequest("sendMessage", array('chat_id' => $admin, "text" => "🔹`1.` */block*
 _block user_
@@ -682,7 +682,7 @@ _settings_
         'resize_keyboard' => true)));
     }
     else if ($text == "Back" && $chat_id==$admin) {
-    		apiRequestJson("sendMessage", array('chat_id' => $chat_id, "text" => '<b>bot is online</b>', 'reply_markup' => array(
+    		apiRequestJson("sendMessage", array('chat_id' => $chat_id, "text" => 'bot is online', 'reply_markup' => array(
         'keyboard' => array(array('broadcast'),array('Help','Members','Blocked'),array("Settings")),
         'one_time_keyboard' => true,
         'selective' => true,
