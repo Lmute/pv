@@ -135,7 +135,7 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => $pmembersiddd[1
 }else{
   
 apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "<b>You Are Banned</b>
-<b>Get Out Of Here Idiot</b>" ,"parse_mode" =>"HTML"));	
+<b>Get Out Of Here Idiot</b> <i>don't send pm again</i>" ,"parse_mode" =>"HTML"));	
 
 }
     }
@@ -207,7 +207,7 @@ $substr = substr($text, 0, 28);
 apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => $pmembersiddd[1],"parse_mode" =>"HTML"));	
 }else{
   
-apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "<b>You Are Banned</b>🚫
+apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "<b>You Are Banned</b>
 <b>Get Out Of Here Idiot</b> <i>don't send pm again</i>" ,"parse_mode" =>"HTML"));	
 
 }
@@ -332,7 +332,7 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "<b>You Are Ban
     else{
         apiRequest("sendDocument", array('chat_id' => $rpto, "document" => $video));
     }
-	apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "send " ,"parse_mode" =>"HTML"));
+	apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "<b>Done.</b>" ,"parse_mode" =>"HTML"));
     
 }
  else if ($chat_id == $admin && $booleans[0] == "true") {
@@ -371,7 +371,7 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => $pmembersiddd[1
 }else{
   
 apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "<b>You Are Banned</b>
-<b>Get Out Of Here Idiot</b>" ,"parse_mode" =>"HTML"));	
+<b>Get Out Of Here Idiot</b> <i>don't send pm again</i>" ,"parse_mode" =>"HTML"));	
 
 }
     }
@@ -540,7 +540,7 @@ $pmembersid= explode("\n",$txxt);
 
 }
 if($chat_id==$admin){
-  apiRequestJson("sendMessage", array('chat_id' => $chat_id, "text" => '<b>bot is online.</b>',"parse_mode"=>"MARKDOWN", 'reply_markup' => array(
+  apiRequestJson("sendMessage", array('chat_id' => $chat_id, "text" => '<b>Bot Is online</b>',"parse_mode"=>"MARKDOWN", 'reply_markup' => array(
         'keyboard' => array(array('broadcast'),array('Help','Members','Blocked'),array("Settings")),
         'one_time_keyboard' => true,
         'selective' => true,
@@ -556,7 +556,10 @@ if($chat_id==$admin){
 -!-@-#-$"."
 ".$pmembersiddd[1]);
 apiRequestJson("sendMessage", array('chat_id' => $chat_id, "text" =>"Start PM Bot Changed To 
+
 ".$starttext.""."
+
+
 "));
     
     
@@ -571,12 +574,16 @@ apiRequestJson("sendMessage", array('chat_id' => $chat_id, "text" =>"Start PM Bo
 
 -!-@-#-$"."
 ".$starttext);
-apiRequestJson("sendMessage", array('chat_id' => $chat_id, "text" =>""Send pm Bot Changed To
+apiRequestJson("sendMessage", array('chat_id' => $chat_id, "text" =>"Send pm Bot Changed To
+
 ".$starttext.""."
+
+
 "));
     
     
-        
+    
+    
     }
     else if ($text != "" && $chat_id != $admin) {
     	
@@ -602,15 +609,15 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => $pmembersiddd[1
 }
     	
     
-    }else if ($text == "Settings" && $chat_id==$admin) {
+    }else if ($text == "Settings ⚙" && $chat_id==$admin) {
     		
     		
     		 apiRequestJson("sendMessage", array('chat_id' => $chat_id,"parse_mode"=>"HTML", "text" => '
 ---------------------------------------------
 <b>Clean Members</b>
 <b>Clean Block List</b>
-<i>for cancell select back</i>'
-, 'reply_markup' => array(
+<i>for cancell select back</i>
+.', 'reply_markup' => array(
         'keyboard' => array(array('Clean Members ','Clean Block List '),array('Back')),
         'one_time_keyboard' => true,
         'selective' => true,
@@ -643,8 +650,8 @@ _your block members_
 —-------------------------------
 🔸`4.`*Settings*
 _settings_
-<i>deleveloper</i> :<code> @iborn , @ibornbot </code>"
-,"parse_mode" =>"MARKDOWN",'reply_markup' => array(
+<i>deleveloper</i> :<code> @iborn , @ibornbot </code>
+.","parse_mode" =>"MARKDOWN",'reply_markup' => array(
         'keyboard' => array(array('broadcast'),array('Help','Members','Blocked'),array("Settings")),
         'one_time_keyboard' => true,
         'selective' => true,
@@ -656,7 +663,7 @@ _settings_
     		$txxt = file_get_contents('pmembers.txt');
         $pmembersid= explode("\n",$txxt);
     		file_put_contents('pmembers.txt',"");
-    		apiRequestJson("sendMessage", array('chat_id' => $chat_id,"parse_mode"=>"HTML", "text" => 'Memebers Cleaned.', 'reply_markup' => array(
+    		apiRequestJson("sendMessage", array('chat_id' => $chat_id,"parse_mode"=>"HTML", "text" => '<b>Members Cleaned</b>.', 'reply_markup' => array(
         'keyboard' => array(array('broadcast'),array('Help','Members','Blocked'),array("Settings")),
         'one_time_keyboard' => true,
         'selective' => true,
@@ -668,14 +675,14 @@ _settings_
     		$txxt = file_get_contents('banlist.txt');
         $pmembersid= explode("\n",$txxt);
     		file_put_contents('banlist.txt',"");
-    		apiRequestJson("sendMessage", array('chat_id' => $chat_id,"parse_mode"=>"HTML", "text" => 'Black list Cleaned.', 'reply_markup' => array(
+    		apiRequestJson("sendMessage", array('chat_id' => $chat_id,"parse_mode"=>"HTML", "text" => '<b>Black list Cleaned</b>', 'reply_markup' => array(
         'keyboard' => array(array('broadcast'),array('Help','Members','Blocked'),array("Settings")),
         'one_time_keyboard' => true,
         'selective' => true,
         'resize_keyboard' => true)));
     }
-    else if ($text == "🔙 Back" && $chat_id==$admin) {
-    		apiRequestJson("sendMessage", array('chat_id' => $chat_id, "text" => '<b> Done.</b>', 'reply_markup' => array(
+    else if ($text == "Back" && $chat_id==$admin) {
+    		apiRequestJson("sendMessage", array('chat_id' => $chat_id, "text" => '<b>bot is online</b>', 'reply_markup' => array(
         'keyboard' => array(array('broadcast'),array('Help','Members','Blocked'),array("Settings")),
         'one_time_keyboard' => true,
         'selective' => true,
@@ -684,8 +691,8 @@ _settings_
         
         
     }
-    else if ($text =="broadcast"  && $chat_id == $admin && $booleans[0]=="false") {
-          apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "<b>Send Your PM.</b>" ,"parse_mode" =>"HTML"));
+    else if ($text =="🗣 Send To All"  && $chat_id == $admin && $booleans[0]=="false") {
+          apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "<b>Send Your PM</b>" ,"parse_mode" =>"HTML"));
       $boolean = file_get_contents('booleans.txt');
 		  $booleans= explode("\n",$boolean);
 	  	$addd = file_get_contents('banlist.txt');
@@ -713,7 +720,7 @@ _settings_
 		$txtt = file_get_contents('pmembers.txt');
 		$membersidd= explode("\n",$txtt);
 		$mmemcount = count($membersidd) -1;
-		 apiRequestJson("sendMessage", array('chat_id' => $chat_id,"parse_mode" =>"HTML", "text" => "<b>Your Members</b>: ".$mmemcount,'reply_markup' => array(
+		 apiRequestJson("sendMessage", array('chat_id' => $chat_id,"parse_mode" =>"HTML", "text" => "<b>Your Members</b> : ".$mmemcount,'reply_markup' => array(
         'keyboard' => array(array('broadcast'),array('Help','Members','Blocked'),array("Settings")),
         'one_time_keyboard' => true,
         'selective' => true,
@@ -724,7 +731,7 @@ _settings_
 		$txtt = file_get_contents('banlist.txt');
 		$membersidd= explode("\n",$txtt);
 		$mmemcount = count($membersidd) -1;
-		 apiRequestJson("sendMessage", array('chat_id' => $chat_id,"parse_mode" =>"HTML", "text" => "<b>Your Black list</b>: ".$mmemcount,'reply_markup' => array(
+		 apiRequestJson("sendMessage", array('chat_id' => $chat_id,"parse_mode" =>"HTML", "text" => "<b>Your black list</b> : ".$mmemcount,'reply_markup' => array(
         'keyboard' => array(array('broadcast'),array('Help','Members','Blocked'),array("Settings")),
         'one_time_keyboard' => true,
         'selective' => true,
@@ -733,14 +740,14 @@ _settings_
 		
 	}
     else if($rpto != "" && $chat_id == $admin){
-    	if($text != "/block" && $text != "/unblock")
+    	if($text != "/ban" && $text != "/unban")
     	{
 	apiRequest("sendMessage", array('chat_id' => $rpto, "text" => $text ,"parse_mode" =>"HTML"));
 	apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "<b>Done.</b>" ,"parse_mode" =>"HTML"));
     	}
     	else
     	{
-    		if($text == "/block"){
+    		if($text == "/ban"){
     	$txtt = file_get_contents('banlist.txt');
 		$banid= explode("\n",$txtt);
 	if (!in_array($rpto,$banid)) {
@@ -754,7 +761,7 @@ _settings_
 }
 		apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "<b>Banned</b>" ,"parse_mode" =>"HTML"));
     		}
-    	if($text == "/unblock"){
+    	if($text == "/unban"){
     	$txttt = file_get_contents('banlist.txt');
 		$banidd= explode("\n",$txttt);
 	if (in_array($rpto,$banidd)) {
@@ -802,4 +809,3 @@ if (!$update) {
 if (isset($update["message"])) {
   processMessage($update["message"]);
 }
-All
