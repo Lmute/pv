@@ -540,7 +540,7 @@ $pmembersid= explode("\n",$txxt);
 
 }
 if($chat_id==$admin){
-  apiRequestJson("sendMessage", array('chat_id' => $chat_id, "text" => 'bot is online.',"parse_mode"=>"MARKDOWN", 'reply_markup' => array(
+  apiRequestJson("sendMessage", array('chat_id' => $chat_id, "text" => '<b>bot is online.</b>',"parse_mode"=>"MARKDOWN", 'reply_markup' => array(
         'keyboard' => array(array('Send To All'),array('Help','Members','Blocked'),array("Settings")),
         'one_time_keyboard' => true,
         'selective' => true,
@@ -631,7 +631,7 @@ _block user_
 🔹`2. `*/unblock *
 _unblock user_
 —------------------------------
-🔹`3. `*/start * <i>{pm}</i>
+🔹`3. `*/tstart * <i>{pm}</i>
 _set start pm_
 —------------------------------
 🔹`4. `*/done * <i>{pm}</i>
