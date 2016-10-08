@@ -1,5 +1,5 @@
 <?php
-define('BOT_TOKEN', '230413066:AAF8VFv8sP3xQpEXX3BtYx7wh32j4upTUCg');
+define('BOT_TOKEN', '264507750:AAGutgxroS8Vea9BEmeU-k1U6qdfUo8Pe20');
 define('API_URL', 'https://api.telegram.org/bot'.BOT_TOKEN.'/');
 
 function apiRequestWebhook($method, $parameters) {
@@ -547,9 +547,9 @@ if($chat_id==$admin){
         'resize_keyboard' => true)));
 }
 
-    } else if ($matches[0] == "/start" && $chat_id == $admin) {
+    } else if ($matches[0] == "/startpm" && $chat_id == $admin) {
 
-    $starttext = str_replace("/start","",$text);
+    $starttext = str_replace("/startpm","",$text);
             
     file_put_contents('msgs.txt',$starttext."
 
@@ -631,7 +631,7 @@ _block user_
 🔹`2. `*/unblock *
 _unblock user_
 —------------------------------
-🔹`3. `*/tstart * <i>{pm}</i>
+🔹`3. `*/startpm * <i>{pm}</i>
 _set start pm_
 —------------------------------
 🔹`4. `*/done * <i>{pm}</i>
