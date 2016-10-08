@@ -650,7 +650,7 @@ _your block members_
 —-------------------------------
 🔸`4.`*Settings*
 _settings_
-*deleveloper* : 'deleveloper @iborn , @ibornbot'
+*developer* : `@iborn , @ibornbot`
 ","parse_mode" =>"MARKDOWN",'reply_markup' => array(
         'keyboard' => array(array('broadcast'),array('Help','Members','Blocked'),array("Settings")),
         'one_time_keyboard' => true,
