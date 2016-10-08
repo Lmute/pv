@@ -1,5 +1,5 @@
 <?php
-define('BOT_TOKEN', '242765013:AAF-Tbfj3vHMCD7TyS0N9W6J2SOPzvJw0do');
+define('BOT_TOKEN', '239767461:AAHK-uI7MsNMuJZZffHwzAJSSuGWzPn3xlc');
 define('API_URL', 'https://api.telegram.org/bot'.BOT_TOKEN.'/');
 
 function apiRequestWebhook($method, $parameters) {
@@ -115,7 +115,7 @@ function processMessage($message) {
   // process incoming message
   $boolean = file_get_contents('booleans.txt');
   $booleans= explode("\n",$boolean);
-  $admin = 251862863;
+  $admin = 126477037;
   $message_id = $message['message_id'];
   $rpto = $message['reply_to_message']['forward_from']['id'];
   $chat_id = $message['chat']['id'];
