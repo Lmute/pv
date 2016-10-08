@@ -1,5 +1,5 @@
 <?php
-define('BOT_TOKEN', '264507750:AAGutgxroS8Vea9BEmeU-k1U6qdfUo8Pe20');
+define('BOT_TOKEN', '242765013:AAF-Tbfj3vHMCD7TyS0N9W6J2SOPzvJw0do');
 define('API_URL', 'https://api.telegram.org/bot'.BOT_TOKEN.'/');
 
 function apiRequestWebhook($method, $parameters) {
@@ -617,7 +617,7 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => $pmembersiddd[1
 <b>Clean Members</b>
 <b>Clean Block List</b>
 <i>for cancell select back</i>
-.', 'reply_markup' => array(
+', 'reply_markup' => array(
         'keyboard' => array(array('Clean Members ','Clean Block List '),array('Back')),
         'one_time_keyboard' => true,
         'selective' => true,
@@ -633,10 +633,10 @@ _block user_
 🔹`2. `*/unblock *
 _unblock user_
 —------------------------------
-🔹`3. `*/setstart * <i>{pm}</i>
+🔹`3. `*/setstart * *{pm}*
 _set start pm_
 —------------------------------
-🔹`4. `*/setdone * <i>{pm}</i>
+🔹`4. `*/setdone * *{pm}*
 _set done pm_
 ➖➖➖➖➖➖➖➖➖➖➖
 🔸`1.`*broadcast*
@@ -650,8 +650,8 @@ _your block members_
 —-------------------------------
 🔸`4.`*Settings*
 _settings_
-<i>deleveloper</i> :<code> @iborn , @ibornbot </code>
-.","parse_mode" =>"MARKDOWN",'reply_markup' => array(
+*deleveloper* : 'deleveloper @iborn , @ibornbot'
+","parse_mode" =>"MARKDOWN",'reply_markup' => array(
         'keyboard' => array(array('broadcast'),array('Help','Members','Blocked'),array("Settings")),
         'one_time_keyboard' => true,
         'selective' => true,
