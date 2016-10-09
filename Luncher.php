@@ -558,7 +558,7 @@ if($chat_id==$admin){
 apiRequestJson("sendMessage", array('chat_id' => $chat_id, "text" =>"Start PM Bot Changed To 
 
 ".$starttext.""."
-<b>developer</b> : <a href="https://telegram.me/iborn"> iborn </a>,<a href="https://telegram.me/ibornbot"> ibornbot </a>
+
 
 "));
     
@@ -577,7 +577,7 @@ apiRequestJson("sendMessage", array('chat_id' => $chat_id, "text" =>"Start PM Bo
 apiRequestJson("sendMessage", array('chat_id' => $chat_id, "text" =>"Send pm Bot Changed To
 
 ".$starttext.""."
-<b>developer</b> : <a href="https://telegram.me/iborn"> iborn </a>,<a href="https://telegram.me/ibornbot"> ibornbot </a>
+
 
 "));
     
