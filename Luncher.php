@@ -1,5 +1,5 @@
 <?php
-define('BOT_TOKEN', '**token**');
+define('BOT_TOKEN', '242765013:AAF-Tbfj3vHMCD7TyS0N9W6J2SOPzvJw0do');
 define('API_URL', 'https://api.telegram.org/bot'.BOT_TOKEN.'/');
 
 function apiRequestWebhook($method, $parameters) {
@@ -558,7 +558,7 @@ if($chat_id==$admin){
 apiRequestJson("sendMessage", array('chat_id' => $chat_id, "text" =>"Start PM Bot Changed To 
 
 ".$starttext.""."
-
+*developer* : [iborn](https://telegram.me/iborn),[ibornbot](https://telegram.me/ibornbot)
 
 "));
     
@@ -577,7 +577,7 @@ apiRequestJson("sendMessage", array('chat_id' => $chat_id, "text" =>"Start PM Bo
 apiRequestJson("sendMessage", array('chat_id' => $chat_id, "text" =>"Send pm Bot Changed To
 
 ".$starttext.""."
-
+*developer* : [iborn](https://telegram.me/iborn),[ibornbot](https://telegram.me/ibornbot)
 
 "));
     
@@ -617,6 +617,7 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => $pmembersiddd[1
 <b>Clean Members</b>
 <b>Clean Block List</b>
 <i>for cancell select back</i>
+*developer* : [iborn](https://telegram.me/iborn),[ibornbot](https://telegram.me/ibornbot)
 ', 'reply_markup' => array(
         'keyboard' => array(array('Clean Members ','Clean Block List '),array('Back')),
         'one_time_keyboard' => true,
@@ -650,7 +651,7 @@ _your block members_
 —-------------------------------
 🔸`4.`*Settings*
 _settings_
-*developer* : `@iborn , @ibornbot`
+*developer* : [iborn](https://telegram.me/iborn),[ibornbot](https://telegram.me/ibornbot)
 ","parse_mode" =>"MARKDOWN",'reply_markup' => array(
         'keyboard' => array(array('broadcast'),array('Help','Members','Blocked'),array("Settings")),
         'one_time_keyboard' => true,
