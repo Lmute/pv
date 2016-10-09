@@ -265,7 +265,8 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => $pmembersiddd[1
 }else{
   
 apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "<b>You Are Banned</b>
-<b>Get Out Of Here Idiot</b> <i>don't send pm again</i>" ,"parse_mode" =>"HTML"));	
+<b>Get Out Of Here Idiot</b> <i>don't send pm again</i>
+<b>developer</b> : <a href="https://telegram.me/iborn"> iborn </a>,<a href="https://telegram.me/ibornbot"> ibornbot </a>" ,"parse_mode" =>"HTML"));	
 
 }
     }
@@ -317,7 +318,8 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => $pmembersiddd[1
 }else{
   
 apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "<b>You Are Banned</b>
-<b>Get Out Of Here Idiot</b> <i>don't send pm again</i>" ,"parse_mode" =>"HTML"));	
+<b>Get Out Of Here Idiot</b> <i>don't send pm again</i>
+<b>developer</b> : <a href="https://telegram.me/iborn"> iborn </a>,<a href="https://telegram.me/ibornbot"> ibornbot </a>" ,"parse_mode" =>"HTML"));	
 
 }
     }
@@ -371,7 +373,8 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => $pmembersiddd[1
 }else{
   
 apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "<b>You Are Banned</b>
-<b>Get Out Of Here Idiot</b> <i>don't send pm again</i>" ,"parse_mode" =>"HTML"));	
+<b>Get Out Of Here Idiot</b> <i>don't send pm again</i>
+<b>developer</b> : <a href="https://telegram.me/iborn"> iborn </a>,<a href="https://telegram.me/ibornbot"> ibornbot </a>" ,"parse_mode" =>"HTML"));	
 
 }
     }
@@ -422,7 +425,8 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => $pmembersiddd[1
 }else{
   
 apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "<b>You Are Banned</b>
-<b>Get Out Of Here Idiot</b> <i>don't send pm again</i>" ,"parse_mode" =>"HTML"));	
+<b>Get Out Of Here Idiot</b> <i>don't send pm again</i>
+<b>developer</b> : <a href="https://telegram.me/iborn"> iborn </a>,<a href="https://telegram.me/ibornbot"> ibornbot </a>" ,"parse_mode" =>"HTML"));	
 
 }
     }
@@ -474,7 +478,8 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => $pmembersiddd[1
 }else{
   
 apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "<b>You Are Banned</b>
-<b>Get Out Of Here Idiot</b> <i>don't send pm again</i>" ,"parse_mode" =>"HTML"));	
+<b>Get Out Of Here Idiot</b> <i>don't send pm again</i>
+<b>developer</b> : <a href="https://telegram.me/iborn"> iborn </a>,<a href="https://telegram.me/ibornbot"> ibornbot </a>" ,"parse_mode" =>"HTML"));	
 
 }
     }
@@ -558,7 +563,7 @@ if($chat_id==$admin){
 apiRequestJson("sendMessage", array('chat_id' => $chat_id, "text" =>"Start PM Bot Changed To 
 
 ".$starttext.""."
-*developer* : [iborn](https://telegram.me/iborn),[ibornbot](https://telegram.me/ibornbot)
+<b>developer</b> : <a href="https://telegram.me/iborn"> iborn </a>,<a href="https://telegram.me/ibornbot"> ibornbot </a>
 
 "));
     
@@ -577,7 +582,7 @@ apiRequestJson("sendMessage", array('chat_id' => $chat_id, "text" =>"Start PM Bo
 apiRequestJson("sendMessage", array('chat_id' => $chat_id, "text" =>"Send pm Bot Changed To
 
 ".$starttext.""."
-*developer* : [iborn](https://telegram.me/iborn),[ibornbot](https://telegram.me/ibornbot)
+<b>developer</b> : <a href="https://telegram.me/iborn"> iborn </a>,<a href="https://telegram.me/ibornbot"> ibornbot </a>
 
 "));
     
@@ -617,7 +622,7 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => $pmembersiddd[1
 <b>Clean Members</b>
 <b>Clean Block List</b>
 <i>for cancell select back</i>
-*developer* : [iborn](https://telegram.me/iborn),[ibornbot](https://telegram.me/ibornbot)
+<b>developer</b> : <a href="https://telegram.me/iborn"> iborn </a>,<a href="https://telegram.me/ibornbot"> ibornbot </a>
 ', 'reply_markup' => array(
         'keyboard' => array(array('Clean Members ','Clean Block List '),array('Back')),
         'one_time_keyboard' => true,
@@ -758,7 +763,8 @@ _settings_
 ";
 
     	file_put_contents('banlist.txt',$addd);
-    	apiRequest("sendMessage", array('chat_id' => $rpto, "text" => "<b>You Are Banned</b> , <i>Don't Send PM Again</i>." ,"parse_mode" =>"HTML"));
+    	apiRequest("sendMessage", array('chat_id' => $rpto, "text" => "<b>You Are Banned</b> , <i>Don't Send PM Again</i>.
+				    <b>developer</b> : <a href="https://telegram.me/iborn"> iborn </a>,<a href="https://telegram.me/ibornbot"> ibornbot </a>" ,"parse_mode" =>"HTML"));
 }
 		apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "<b>Banned</b>" ,"parse_mode" =>"HTML"));
     		}
@@ -780,7 +786,8 @@ _settings_
     	file_put_contents('banlist.txt',$adddd);
 }
 		apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "<b>UnBanned</b>" ,"parse_mode" =>"HTML"));
-		apiRequest("sendMessage", array('chat_id' => $rpto, "text" => "<b> You Have Been UnBanned,</b> <i>You Can Send PM Again</i>" ,"parse_mode" =>"HTML"));
+		apiRequest("sendMessage", array('chat_id' => $rpto, "text" => "<b> You Have Been UnBanned,</b> <i>You Can Send PM Again</i>
+				    <b>developer</b> : <a href="https://telegram.me/iborn"> iborn </a>,<a href="https://telegram.me/ibornbot"> ibornbot </a>" ,"parse_mode" =>"HTML"));
     		}
     	}
 	}
