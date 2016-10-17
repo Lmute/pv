@@ -661,7 +661,8 @@ _settings_
         'resize_keyboard' => true)));
     }
     else if ($text == "Home" && $chat_id==$admin) {
-    		apiRequestJson("sendMessage", array('chat_id' => $chat_id, "text" => 'bot is online', 'reply_markup' => array(
+    		apiRequestJson("sendMessage", array('chat_id' => $chat_id, "text" => 'bot is online
+        ', 'reply_markup' => array(
         'keyboard' => array(array('broadcast'),array('Help','Members','Blocked Users'),array("Settings")),
         'one_time_keyboard' => true,
         'selective' => true,
