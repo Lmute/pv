@@ -553,7 +553,7 @@ apiRequestJson("sendMessage", array('chat_id' => $chat_id, "text" =>"Start pm Bo
 
 ".$starttext.""."
 
-<a href="https://telegram.me/iborn"> developer </a> 
+
 "));
     
     
@@ -572,7 +572,7 @@ apiRequestJson("sendMessage", array('chat_id' => $chat_id, "text" =>"Done pm Bot
 
 ".$starttext.""."
 
-<a href="https://telegram.me/iborn"> developer </a> 
+
 "));
     
     
